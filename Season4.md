@@ -8,6 +8,7 @@
 * Will have quite some really good buffs but, definently not adding where it will not burn in lava.
 * Will it have increased damage? Maybe, I'm not to sure yet. We will see about it.
 * Testing Stages will happen in about an hour.
+* So much coding to make this ability only affect those that don't have the ability, very fucking complex.
 #### Piglin
 * Currently giving it a new ability to be able to evolve into the **PIGLIN BRUTE**.
 ### Enchantments
