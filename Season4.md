@@ -6,3 +6,8 @@
 * Will have quite some really good buffs but, definently not adding where it will not burn in lava.
 * Will it have increased damage? Maybe, I'm not to sure yet. We will see about it.
 * Testing Stages will happen in about an hour.
+### Enchantments
+#### Soulbound
+* Honestly, this might end up getting removed due to the fact there will be no point in killing players if they have a soulbound enchant on them.
+* Has it been requested to get it removed? Fucking Yes, both players want it removed and the fucking Owner has too.
+* Honestly should I remove it? Yes and no. Yes because it caused a dupe last time and no because we will have power hungry players that want to dominate the server by killing others.
