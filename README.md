@@ -1,4 +1,5 @@
 # ShatteredOrigins About Me
+![ServerGif](https://github.com/user-attachments/assets/609efeed-0b77-40c0-9653-707cbc813afd)
 
 # Information
 * So, **ShatteredOrigins** is a server for Minecraft players from both java and bedrock edition can play on our server and have fun.
@@ -15,8 +16,8 @@
 ## Hailey
 * She loves playing the server, shes active most of the time and is friendly with everyone.
 
-# Staff Postions
-## Currently Looking For
-* 3 Admins
-* 3 Mods
-* 3 Helpers
+# Discord Server
+[ShatteredOrigins](https://discord.gg/Z9q3QWjuCu)
+
+# Website
+[Website](https://shattered-origins.webnode.page/)
