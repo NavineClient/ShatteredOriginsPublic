@@ -1,0 +1,46 @@
+# ========================================================================
+# Author: NavineClient / SelectAnimal58
+# Description: Commands For Staff To Use On Any Server
+# Dependencies: Skript, Skript-GUI, SkBee
+# Version: 0.0.1-Alpha
+# ========================================================================
+
+# Staff Chat Command
+command /staffchat: # Main Command
+    permission: staffchat.use.skript # Permission For The Command
+    permission message: &cYou do not have the required rank to use this command! # Message For Those Without The Permissions
+    trigger: # Activates The Command
+        if {staffchat::%player%} is false: # Checks To See If Staff Chat Was Disabled
+            set {staffchat::%player%} to true # Sets Staff Chat To True
+            send "&7You Have &aEnabled &7Staff Chat!" to the player # Sends A Message To Confirm Staff Chat Was Activated
+        else: # Another Options
+            set {staffchat::%player%} to false # Sets The Staff Chat To Disabled If It Was Enabled
+            send "&7You Have &cDisabled &7Staff Chat!" to the player # Sends A Message To Confirm Staff Chat Was Disabled
+
+# Staff Chat Messages
+on chat: # Looks For A Player Chat Message
+    if {staffchat::%player%} is true: # Check To See If Staff Chat Was Enabled
+        cancel event # Cancels The Main Message To Prevent Normal Players From Seeing The Message
+        loop all players: # Loops All Online Players
+            if loop-player has permission "staffchat.see.skript": # Check To See If The Player Has A Permission
+                send "&eStaff &f| &6%player% &7%message%" to loop-player # Sends A Message To All Players With The Permission
+
+# Admin Chat Command
+command /adminchat: # Main Command
+    permission: adminchat.use.skript # Permission For The Command
+    permission message: &cYou do not have the required rank to use this command! # Message For Those Without The Permissions
+    trigger: # Activates The Command
+        if {adminchat::%player%} is false: # Checks To See If Admin Chat Was Disabled
+            set {adminchat::%player%} to true # Sets Admin Chat To True
+            send "&7You Have &aEnabled &7Admin Chat!" to the player # Sends A Message To Confirm Admin Chat Was Activated
+        else: # Another Options
+            set {adminchat::%player%} to false # Sets The Admin Chat To Disabled If It Was Enabled
+            send "&7You Have &cDisabled &7Admin Chat!" to the player # Sends A Message To Confirm Admin Chat Was Disabled
+
+# Admin Chat Messages
+on chat: # Looks For A Player Chat Message
+    if {adminchat::%player%} is true: # Check To See If Admin Chat Was Enabled
+        cancel event # Cancels The Main Message To Prevent Normal Players From Seeing The Message
+        loop all players: # Loops All Online Players
+            if loop-player has permission "adminchat.see.skript": # Check To See If The Player Has A Permission
+                send "&bAdmin &f| &3%player% &7%message%" to loop-player # Sends A Message To All Players With The Permission
